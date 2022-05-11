@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casas</title>
-    <link rel="stylesheet" href="../css/casa.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
+    <script src="../javascript/cadastro.js"></script>
 </head>
 
 <body>
@@ -35,34 +35,32 @@
     </div>
     <div class="banner">
         <div class="opac">
-            <div class="casas">
-                <h1>Casas disponivéis</h1>
-                <div class="flex-container">
-                    <div class="imagens"><img src="../../img/casa1.jpg" alt="">
-                        <button onclick="casa1()">Comprar R$50,00</button>
-                    </div>
-                    <div class="imagens"><img src="../../img/casa2.jpg" alt="">
-                        <button onclick="casa2()">Comprar R$80,00</button>
-                    </div>
-                    <div class="imagens"><img src="../../img/casa3.jpg" alt="">
-                        <button onclick="casa3()">Comprar R$200,00</button>
-                    </div>
-                    <div class="imagens"><img src="../../img/casa4.jpg" alt="">
-                        <button onclick="casa4()">Comprar R$50,00</button>
-                    </div>
-                    <div class="imagens"><img src="../../img/casa5.jpg" alt="">
-                        <button onclick="compra5()">Comprar R$80,00</button>
-                    </div>
-                    <div class="imagens"><img src="../../img/casa6.jpg" alt="">
-                        <button onclick="casa6()">Comprar R$300,00</button>
-                    </div>
+            <div class="card">
+                <h2>Criar conta</h2>
+                <p>Nome</p>
+                <input type="text" placeholder="insira seu nome" autofocus id="nome_input">
+                <p>CPF</p>
+                <input type="text" placeholder="insira seu CPF" id="cpf_input">
+                <p>Telefone</p>
+                <input type="text" placeholder="insira o número do seu tel" id="tel_input">
+                <p>Email</p>
+                <input type="email" placeholder="insira seu email" id="email_input">
+                <p>Senha</p>
+                <input type="password" placeholder="crie sua senha" id="senha_input">
+                <p>Confirmar senha</p>
+                <input type="password" placeholder="confirme sua senha" id="senha_confirmacao_input">
+                <div class="checkbox"><br>
+                    <input type="checkbox"> <span> Quer receber novidades do Gta V?</span>
                 </div>
-                <div class="botoes">
-                    <button><a
-                            href="file:///C:/Users/Pichau/Desktop/sprint-3-individual/api-do-site/html/casas.html">1</a></button>
-                    <button><a
-                            href="file:///C:/Users/Pichau/Desktop/sprint-3-individual/api-do-site/html/casas2.html">2</a></button>
-                </div>
+                <br>
+                <button onclick="cadastrar()" class="botao"> <span> Junte-se a nós </a></span></button>
+                <br>
+                Já é usuário? <a href="logingrupopi.html"> Fazer login</a>
+
+                <span id="avisomsg" class="aviso">
+
+                </span>
+
             </div>
         </div>
     </div>
