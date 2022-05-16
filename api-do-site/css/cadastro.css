@@ -65,9 +65,9 @@ ul a {
     justify-content: column;
     align-items: center;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 700px;
+    margin-left: 450px;
     margin-right: 400px;
     width: 500px;
     border: 3px black solid;
@@ -76,10 +76,28 @@ ul a {
     flex-direction: column;
     font-weight: bolder;
     position: absolute;
-
     background: rgba(5, 5, 5, 0.9);
 
 }
+
+.card input{
+
+border-radius: 6px;
+background-color: rgb(175, 169, 216);
+}
+
+.card ::placeholder{
+
+color: black;
+
+}
+
+.card button{
+
+border-radius: 6px;
+height: 25px;
+}
+
 
 .card a {
 
