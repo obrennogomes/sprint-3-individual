@@ -71,8 +71,12 @@ function cadastrar(req, res) {
     // Faça as validações dos valores
     if (nome == undefined) {
         res.status(400).send("Seu nome está undefined!");
+    } else if (cpf == undefined) {
+        res.status(400).send("Seu cpf está undefined!");
+    } else if (tel == undefined) {
+        res.status(400).send("Sua tel está undefined!");
     } else if (email == undefined) {
-        res.status(400).send("Seu email está undefined!");
+        res.status(400).send("Sua email está undefined!");
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está undefined!");
     } else {

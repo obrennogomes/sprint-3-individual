@@ -24,7 +24,7 @@ body {
 .conteiner img {
     height: 8vh;
     margin-left: 10vh;
-    margin-bottom: 5vh;
+    margin-tom: 5vh;
 
 }
 
@@ -35,7 +35,7 @@ body {
     justify-content: space-between;
     margin-right: 10vh;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-tom: auto;
 }
 
 ul a {
@@ -66,7 +66,7 @@ ul a {
     align-items: center;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-tom: 100px;
     margin-left: 450px;
     margin-right: 400px;
     width: 500px;
@@ -92,11 +92,7 @@ color: black;
 
 }
 
-.card button{
 
-border-radius: 6px;
-height: 25px;
-}
 
 
 .card a {
@@ -149,7 +145,7 @@ footer .box:nth-child(4) {
 
 .box h2 {
 
-    margin-bottom: 20px;
+    margin-tom: 20px;
 
 }
 
