@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="./js/funcoes.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="conteiner">
+            <img src="https://i.pinimg.com/originals/90/9a/21/909a21ef77e6ac03e061a1a6fc6255e1.png" alt="">
+            <h1 class="titulo">GTA Roleplay</h1>
+            <ul>
+                <li><a href="home.html">Inicio</a>
+                </li>
+                <li><a href="">|</a></li>
+                <li><a
+                        href="cadastro.html">Cadastro</a>
+                </li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="opac">
+            <div class="card_login">
+                <h1>Faça o login</h1>
+                <p>Email</p>
+                <input type="email" placeholder="insira seu email" id="email_input"><br>
+                <p>Senha</p>
+                <input type="password" placeholder="crie sua senha" id="senha_input"><br>
+                <button onclick="login()">Entrar</button>
+                <p>Não está cadastrado ? <a href="cadastro.html">Junte-se a nós</a></p>
+            </div>
+            <div id="div_aguardar" class="loading-div">
+                <img src="./assets/circle-loading.gif" id="loading-gif">
+            </div>
+
+            <div id="div_erros_login">
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="box">
+            <h2>Informações</h2>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Suporte</h2>
+            <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Telefone</a></li>
+                <li><a href="">Chat</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/originals/90/9a/21/909a21ef77e6ac03e061a1a6fc6255e1.png" alt="">
+            <ul class="ul">
+                <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div> 
+
+
+
+
+    </footer>
+</body>
+
+</html>
+
+<script>
+
+
+    function entrar() {
+        aguardar();
+
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+                    sessionStorage.ID_SESSAO = (Math.random() * 10000).toFixed(0);
+
+                    setTimeout(function () {
+                        window.location = "./dashboard/cards.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
+
+</script>
