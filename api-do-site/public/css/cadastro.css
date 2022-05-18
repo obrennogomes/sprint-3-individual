@@ -23,19 +23,19 @@ body {
 
 .conteiner img {
     height: 8vh;
-    margin-left: 10vh;
-    margin-tom: 5vh;
+    margin-left: 3vw;
+    margin-top: 1.5vh;
 
 }
 
 .conteiner ul {
 
     display: flex;
-    width: 70vh;
+    width: 34vw;
     justify-content: space-between;
-    margin-right: 10vh;
+    margin-right: 4vw;
     margin-top: auto;
-    margin-tom: auto;
+    margin-bottom: auto;
 }
 
 ul a {
@@ -60,16 +60,14 @@ ul a {
 }
 
 .card {
-    height: 750px;
+    height: 110vh;
     color: white;
     justify-content: column;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
-    margin-tom: 100px;
-    margin-left: 450px;
-    margin-right: 400px;
-    width: 500px;
+    margin-top: 15vh;
+    margin-left: 32vw;
+    width: 37vw;
     border: 3px black solid;
     border-radius: 10px;
     display: flex;
@@ -80,15 +78,15 @@ ul a {
 
 }
 
-.card input{
+.card input {
 
-border-radius: 6px;
-background-color: rgb(175, 169, 216);
+    border-radius: 6px;
+    background-color: rgb(175, 169, 216);
 }
 
-.card ::placeholder{
+.card ::placeholder {
 
-color: black;
+    color: black;
 
 }
 
@@ -99,27 +97,6 @@ color: black;
 
     text-decoration: none;
     color: rgb(114, 96, 228);
-    }
-
- .casas h1{
-color: white;
-text-align: center;
-margin-top: 100px;
-font-size: 70px;
-font-weight: 1100;
-}
-/* 
-.imagens {
-    width: 600px;
-} */
-
-.imagens img{
-display: flex;
-height: 200px;
-margin-left: 50px;
-width: 300px;
-height: 200px;
-
 }
 
 
@@ -134,7 +111,7 @@ footer {
 
 footer .box {
 
-    width: 320px;
+    width: 5vw;
     min-height: 150px;
     padding: 20px;
 }
@@ -143,15 +120,9 @@ footer .box:nth-child(4) {
     width: 400px;
 }
 
-.box h2 {
-
-    margin-tom: 20px;
-
-}
-
 .box ul li {
 
-    margin: 10px 0px;
+    margin: 2vh 0px;
     list-style: none;
 }
 
@@ -183,22 +154,28 @@ footer .box:nth-child(4) {
     padding: 0px 20px;
 }
 
-.box img {
+.box h2{
 
-height: 20vh;
+margin-bottom: 5vh;
+
 }
 
-.box .ul{
+.box img {
+
+    height: 20vh;
+}
+
+.box .ul {
 
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 6vw;
 }
 
-.box{
+.box {
 
-text-align: center  ;
-margin-left: 50px;
+    text-align: center;
+    margin-left: 17vw;
 }
 
 .flex-container {

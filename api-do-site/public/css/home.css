@@ -23,17 +23,17 @@ body {
 
 .conteiner img {
     height: 8vh;
-    margin-left: 10vh;
-    margin-bottom: 5vh;
+    margin-left: 3vw;
+    margin-top: 1.5vh;
 
 }
 
 .conteiner ul {
 
     display: flex;
-    width: 70vh;
+    width: 34vw;
     justify-content: space-between;
-    margin-right: 10vh;
+    margin-right: 4vw;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -66,9 +66,8 @@ ul a {
  .caixas h1{
 color: white;
 text-align: center;
-margin-top: 20px;
+margin-top: 7vh;
 font-size: 70px;
-font-weight: 1100;
 }
 /* 
 .imagens {
@@ -77,9 +76,9 @@ font-weight: 1100;
 
 .imagens img{
 display: flex;
-height: 300px;
-margin-left: 100px;
-width: 500px;
+height: 50vh;
+margin-left: 6VW;
+width: 40vw;
 justify-content: space-between;
 border: 10px black solid;
 }
@@ -96,7 +95,7 @@ footer {
 
 footer .box {
 
-    width: 20px;
+    width: 2vw;
     min-height: 150px;
     padding: 20px;
 }
@@ -107,13 +106,13 @@ footer .box:nth-child(4) {
 
 .box h2 {
 
-    margin-bottom: 20px;
+    margin-bottom: 5vh;
 
 }
 
 .box ul li {
 
-    margin: 10px 0px;
+    margin: 2vh 0px;
     list-style: none;
 }
 
@@ -154,14 +153,14 @@ height: 20vh;
 
     display: flex;
     justify-content: space-between;
-    width: 100px;
+    width: 6vw;
     
 }
 
 .box{
 
 text-align: center  ;
-margin-left: 250px;
+margin-left: 20vw;
 }
 
 .flex-container {

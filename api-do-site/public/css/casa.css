@@ -12,7 +12,7 @@ body {
 
 .titulo {
     color: white;
-    margin-right: 65vh;
+    margin-right: 30vw;
 }
 
 .conteiner {
@@ -23,17 +23,17 @@ body {
 
 .conteiner img {
     height: 8vh;
-    margin-left: 10vh;
-    margin-bottom: 5vh;
+    margin-left: 5vw;
+    margin-top: 2vh;
 
 }
 
 .conteiner ul {
 
     display: flex;
-    width: 70vh;
+    width: 33vw;
     justify-content: space-between;
-    margin-right: 10vh;
+    margin-right: 5vw;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -62,21 +62,18 @@ ul a {
  .casas h1{
 color: white;
 text-align: center;
-margin-top: 100px;
+margin-top: 10vh;
 font-size: 70px;
-font-weight: 1100;
+
 }
-/* 
-.imagens {
-    width: 600px;
-} */
+
 
 .imagens img{
 display: flex;
-height: 200px;
-margin-left: 100px;
-width: 300px;
-height: 200px;
+height: 30vh;
+margin-left: 9vw;
+width: 20vw;
+
 border-bottom: 200px;
 border: solid rgb(255, 255, 255) 5px;
 
