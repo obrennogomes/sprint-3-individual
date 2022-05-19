@@ -7,33 +7,33 @@ body {
 
     background-color: black;
 
-
 }
 
 .titulo {
     color: white;
-    margin-right: 65vh;
+    margin-right: 100vh;
 }
 
 .conteiner {
 
     display: flex;
     justify-content: space-between;
+   
 }
 
 .conteiner img {
-    height: 8vh;
-    margin-left: 10vh;
-    margin-bottom: 5vh;
+    height: 5vh;
+    margin-left: 6vw;
+    margin-top: 1.5vh;
 
 }
 
 .conteiner ul {
 
     display: flex;
-    width: 70vh;
+    width: 19vw;
     justify-content: space-between;
-    margin-right: 10vh;
+    margin-right: 4vw;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -45,7 +45,7 @@ ul a {
 
 .banner {
 
-    background-image: url('https://techbeasts.com/wp-content/uploads/2014/07/gta-5-wallpaper-cover-image.jpg');
+    background-image: url('https://cdn.mos.cms.futurecdn.net/2vzQG7obGTiVToReayVvT9.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 150vh;
@@ -56,20 +56,18 @@ ul a {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .card_login {
-    height: 350px;
+    height: 40vh;
     color: white;
     justify-content: column;
     align-items: center;
     text-align: center;
-    margin-top: 200px;
-    margin-bottom: 100px;
-    margin-left: 450px;
-    margin-right: 400px;
-    width: 500px;
+    margin-top: 30vh;
+    margin-left: 40vw;
+    width: 25vw;
     border: 3px black solid;
     border-radius: 10px;
     display: flex;
@@ -84,7 +82,8 @@ ul a {
 .card_login button{
 
     border-radius: 6px;
-    height: 25px;
+    height: 3vh;
+    width: 4vw;
     }
 
 .card_login input{
@@ -106,28 +105,43 @@ text-decoration: none;
 color: rgb(114, 96, 228);
 }
 
- .casas h1{
-color: white;
-text-align: center;
-margin-top: 100px;
-font-size: 70px;
-font-weight: 1100;
-}
-/* 
-.imagens {
-    width: 600px;
-} */
-
-.imagens img{
-display: flex;
-height: 200px;
-margin-left: 50px;
-width: 300px;
-height: 200px;
-
+.alerta_erro{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    align-items: center;
+    margin-left: 2vw;
+    
 }
 
-
+  
+  .card_erro {
+    display: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 15vw;
+    /* position: fixed; */
+    border-radius: 2vh;
+    border: #e6005a 0.5vh solid;
+    padding: 1vh 1vw;
+    margin-right: 10%;
+  }
+  
+  .card_erro #mensagem_erro{
+    font-weight: 500;
+    font-size: 3vh;
+    text-align: center;
+  }
+  .loading-div {
+    width: 5vw;
+    margin: auto;
+    display: none;
+  }
+  
+  .loading-div img {
+    height: 5vh;
+    width: 5vw;
+  }
 
 footer {
     color: white;
@@ -139,7 +153,7 @@ footer {
 
 footer .box {
 
-    width: 320px;
+    width: 26vw;
     min-height: 150px;
     padding: 20px;
 }
@@ -150,7 +164,7 @@ footer .box:nth-child(4) {
 
 .box h2 {
 
-    margin-bottom: 20px;
+    margin-bottom: 4vh;
 
 }
 
@@ -190,20 +204,21 @@ footer .box:nth-child(4) {
 
 .box img {
 
-height: 20vh;
+height: 15vh;
 }
 
 .box .ul{
 
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 10vw;
+    margin-left: 6vw;
 }
 
 .box{
 
 text-align: center  ;
-margin-left: 50px;
+margin-left: 4vw;
 }
 
 .flex-container {
