@@ -11,7 +11,7 @@ body {
 
 .titulo {
     color: white;
-    margin-right: 100vh;
+    margin-right: 90vh;
 }
 
 .conteiner {
@@ -60,7 +60,7 @@ ul a {
 }
 
 .card_login {
-    height: 40vh;
+    height: 50vh;
     color: white;
     justify-content: column;
     align-items: center;
