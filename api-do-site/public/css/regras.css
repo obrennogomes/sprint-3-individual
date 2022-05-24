@@ -10,6 +10,22 @@ body {
 
 }
 
+.barra {
+    background-color: #ffffff;
+    width: 0%;
+    height: 2px;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+a:hover .barra {
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
 .titulo {
     color: white;
     margin-right: 70vh;
@@ -22,7 +38,7 @@ body {
 }
 
 .conteiner img {
-    height: 5vh;
+    height: 9vh;
     margin-left: 6vw;
     margin-top: 1.5vh;
 
@@ -62,7 +78,7 @@ ul a {
 .card{
 
 background: rgb(0, 0, 0, 0.9);
-height: 100vh;
+height: 120vh;
 width: 60vw;
 margin-top: 10vh;
 margin-left: 20vw;
@@ -75,12 +91,12 @@ border-radius: 90px;
 .regras h1{
 
 
-font-size: 60px;
+font-size: 50px;
 color: rgb(191, 162, 201);
 }
 
 .regras p{
-font-size: 20px;
+font-size: 15px;
 text-align: center;
 }
 
