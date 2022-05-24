@@ -12,7 +12,7 @@ body {
 
 .titulo {
     color: white;
-    margin-right: 90vh;
+    margin-right: 70vh;
 }
 
 .conteiner {
@@ -31,7 +31,7 @@ body {
 .conteiner ul {
 
     display: flex;
-    width: 19vw;
+    width: 30vw;
     justify-content: space-between;
     margin-right: 4vw;
     margin-top: auto;
@@ -45,7 +45,7 @@ ul a {
 
 .banner {
 
-    background-image: url('https://s2.best-wallpaper.net/wallpaper/2560x1920/1904/GTA-5-city-at-night-purple-style-skyscrapers_2560x1920.jpg');
+    background-image: url('img/fundo-sobre.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 150vh;

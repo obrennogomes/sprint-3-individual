@@ -14,15 +14,15 @@
 <body>
     <div class="header">
         <div class="conteiner">
-            <img src="https://static.vakinha.com.br/uploads/vakinha/image/542953/download.jpg?ims=700x410" alt="">
+            <img src="css/img/logo.jpg" alt="">
             <h1 class="titulo">São Paulo RP</h1>
             <ul>
                 <li><a href="index.html">Inicio</a>
                 </li>
                 <li><a href="sobre.html">Sobre nós</a> </li>
+                <li><a href="regras.html">Regras</a></li>
                 <li><a href="">|</a></li>
-                <li><a
-                        href="cadastro.html">Cadastro</a>
+                <li><a href="cadastro.html">Cadastro</a>
                 </li>
                 <li><a href="login.html">Login</a></li>
             </ul>
@@ -36,24 +36,25 @@
                 <input type="email" placeholder="insira seu email" id="email_input">
                 <p>Senha</p>
                 <input type="password" placeholder="insira sua senha" id="senha_input"><br>
-                <button onclick="login()">Entrar</button>
+                <button onclick="entrar()">Entrar</button>
                 <p>Não está cadastrado ? <a href="cadastro.html">Junte-se a nós</a></p>
-            </div>
-            <div id="div_aguardar" class="loading-div">
-                <img src="css/img/circle-loading.gif" id="loading-gif">
-            </div>
-            <div class="alerta_erro">
-                <div class="card_erro" id="cardErro">
-                    <span id="mensagem_erro"></span>
+                <div id="div_aguardar" class="loading-div">
+                    <img src="css/img/circle-loading.gif" id="loading-gif">
                 </div>
+                <div class="alerta_erro">
+                    <div class="card_erro" id="cardErro">
+                        <span id="mensagem_erro"></span>
+                    </div>
+                </div>
+                <div id="div_erros_login">
+    
+                </div>
+                <span id="mostrar"></span>
             </div>
-            <div id="div_erros_login">
-
-            </div>
-            <span id="mostrar"></span>
-        </div>
            
         </div>
+
+    </div>
     </div>
     <footer>
         <div class="box">
@@ -73,13 +74,13 @@
             </ul>
         </div>
         <div class="box">
-            <img src="https://static.vakinha.com.br/uploads/vakinha/image/542953/download.jpg?ims=700x410" alt="">
+            <img src="css/img/logo.jpg" alt="">
             <ul class="ul">
                 <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
                 <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             </ul>
-        </div> 
+        </div>
 
 
 
@@ -92,8 +93,8 @@
 <script>
 
 
-    
-function entrar() {
+
+    function entrar() {
         aguardar();
 
         var emailVar = email_input.value;
@@ -109,7 +110,7 @@ function entrar() {
         else {
             setInterval(sumirMensagem, 5000)
         }
- 
+
         if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Ops, e-mail inválido! Verifique e tente novamente.";
@@ -147,7 +148,7 @@ function entrar() {
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "dashboard.html";
+                        window.location = "login2.html";
                     }, 1000); // apenas para exibir o loading
 
                 });

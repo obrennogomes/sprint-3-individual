@@ -12,7 +12,7 @@ body {
 
 .titulo {
     color: white;
-    margin-right: 65vh;
+    margin-right: 0vh;
 }
 
 .conteiner {
@@ -22,18 +22,18 @@ body {
 }
 
 .conteiner img {
-    height: 8vh;
-    margin-left: 10vh;
-    margin-bottom: 5vh;
+    height: 5vh;
+    margin-left: 39vw;
+    margin-top: 1.5vh;
 
 }
 
 .conteiner ul {
 
     display: flex;
-    width: 70vh;
+    width: 30vw;
     justify-content: space-between;
-    margin-right: 10vh;
+    margin-right: 4vw;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -45,7 +45,7 @@ ul a {
 
 .banner {
 
-    background-image: url('https://techbeasts.com/wp-content/uploads/2014/07/gta-5-wallpaper-cover-image.jpg');
+    background-image: url('img/fundo-login-cadastro.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 150vh;
@@ -73,10 +73,9 @@ font-weight: 1100;
 
 .imagens img{
 display: flex;
-height: 200px;
-margin-left: 100px;
-width: 300px;
-height: 200px;
+height: 30vh;
+margin-left: 9vw;
+width: 20vw;
 border-bottom: 200px;
 border: solid rgb(255, 255, 255) 5px;
 
@@ -84,10 +83,13 @@ border: solid rgb(255, 255, 255) 5px;
 
 .imagens button{
 
-margin-left: 180px;
-margin-top: 16px;
-
-}
+    margin-left: 15vw;
+    margin-top: 3vh;
+    border-radius: 30px;
+    background-color: rgb(159, 152, 152);
+    color: white;
+    font-size: 20px;
+    }
 
 
 
@@ -102,7 +104,7 @@ footer {
 
 footer .box {
 
-    width: 320px;
+    width: 26vw;
     min-height: 150px;
     padding: 20px;
 }
@@ -113,7 +115,7 @@ footer .box:nth-child(4) {
 
 .box h2 {
 
-    margin-bottom: 20px;
+    margin-bottom: 4vh;
 
 }
 
@@ -153,14 +155,15 @@ footer .box:nth-child(4) {
 
 .box img {
 
-height: 20vh;
+height: 15vh;
 }
 
 .box .ul{
 
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 10vw;
+    margin-left: 6vw;
 }
 
 .box{

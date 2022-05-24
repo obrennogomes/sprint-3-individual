@@ -11,7 +11,7 @@ body {
 
 .titulo {
     color: white;
-    margin-right: 90vh;
+    margin-right: 70vh;
 }
 
 .conteiner {
@@ -31,7 +31,7 @@ body {
 .conteiner ul {
 
     display: flex;
-    width: 19vw;
+    width: 30vw;
     justify-content: space-between;
     margin-right: 4vw;
     margin-top: auto;
@@ -45,7 +45,7 @@ ul a {
 
 .banner {
 
-    background-image: url('https://cdn.mos.cms.futurecdn.net/2vzQG7obGTiVToReayVvT9.jpeg');
+    background-image: url('img/fundo-login-cadastro.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 150vh;
@@ -115,7 +115,16 @@ color: rgb(114, 96, 228);
 }
 
   
-  .card_erro {
+.alerta_erro {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5vh;
+    align-items: center;
+    margin-left: 2vw;
+
+}
+
+.card_erro {
     display: none;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -125,13 +134,25 @@ color: rgb(114, 96, 228);
     border: #e6005a 0.5vh solid;
     padding: 1vh 1vw;
     margin-right: 10%;
-  }
-  
-  .card_erro #mensagem_erro{
+}
+
+.card_erro #mensagem_erro {
     font-weight: 500;
     font-size: 3vh;
     text-align: center;
-  }
+}
+
+.loading-div {
+    width: 5vw;
+    margin: auto;
+    display: none;
+}
+
+.loading-div img {
+    height: 5vh;
+    width: 5vw;
+}
+
   .loading-div {
     width: 5vw;
     margin: auto;
