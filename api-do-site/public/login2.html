@@ -11,7 +11,7 @@
     <script src="./js/funcoes.js"></script>
 </head>
 
-<body>
+<body onload="qtdJogadore()">
     <div class="header">
         <div class="conteiner">
             <img src="css/img/logo.jpg" alt="">
@@ -23,7 +23,7 @@
         <div class="opac">
             <div class="menu"><br>
                 <p class="email">usuário:<br> Brenno Gomes</p> 
-                <p class="user">email: Brenno@gmail.com</p>   
+                <p class="user" id="quant_play">email: Brenno@gmail.com</p>   
                 <hr>
                 <ul>
                  <li> Players</li>
@@ -71,3 +71,19 @@
 </body>
 
 </html>
+<script>
+    function qtdJogadore() {
+        fetch("usuarios/listar").then(function (resposta) {
+            if (resposta.ok) {
+                resposta.json().then(function (resposta) {
+                    console.log("Dados certos: ", JSON.stringify(resposta))
+                    quant_play.innerHTML = resposta[0].qtdplayers;
+                })
+            } else {
+                throw "Problema na API"
+            }
+        }).catch(function (resposta) {
+            console.error(resposta)
+        })
+    }
+</script>
