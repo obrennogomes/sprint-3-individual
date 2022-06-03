@@ -27,7 +27,7 @@ a:hover .barra {
 
 .titulo {
     color: white;
-    margin-right: 70vh;
+    margin-right: 60vh;
 }
 
 .conteiner {
@@ -81,6 +81,7 @@ ul a {
     height: 90vh;
     margin-top: 15vh;
     border: 4px solid purple;
+    padding: 10px;
 }
 
 .titu h1 {

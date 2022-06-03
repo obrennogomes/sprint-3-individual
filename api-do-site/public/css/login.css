@@ -27,7 +27,7 @@ a:hover .barra {
 
 .titulo {
     color: white;
-    margin-right: 70vh;
+    margin-right: 60vh;
 }
 
 .conteiner {
@@ -76,7 +76,7 @@ ul a {
 }
 
 .card_login {
-    height: 50vh;
+    height: 63vh;
     color: white;
     justify-content: column;
     align-items: center;

@@ -28,7 +28,7 @@ a:hover .barra {
 
 .titulo {
     color: white;
-    margin-right: 70vh;
+    margin-right: 60vh;
 }
 
 .conteiner {
@@ -86,6 +86,7 @@ color: white;
 text-align: center;
 border: 3px solid palevioletred;
 border-radius: 90px;
+padding: 10px;
 }
  
 .regras h1{
