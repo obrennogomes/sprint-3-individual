@@ -30,6 +30,21 @@ a:hover .barra {
     margin-right: 60vh;
 }
 
+.titu button{
+margin-left: 20vw;
+margin-top: 20vh;
+font-size: 40px;
+background-color: purple;
+border-radius: 15px;
+cursor: pointer;
+}
+
+.textoss{
+color: white;
+font-size: 40px;
+
+}
+
 .conteiner {
 
     display: flex;

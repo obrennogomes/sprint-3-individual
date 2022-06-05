@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Sobre nós</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/sobre.css">
+    <link rel="shortcut icon" href="css/img/logo.jpg" type="image/x-icon">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <h1 class="titulo">São Paulo RP</h1>
             <ul>
                 <li><a href="index.html">Inicio <div class="barra"></div>
-                </a>
+                    </a>
                 </li>
                 <li><a href="sobre.html">Sobre nós <div class="barra"></div></a></li>
 
@@ -25,10 +26,10 @@
                 <li><a href="">|</a></li>
 
                 <li><a href="cadastro.html">Cadastro <div class="barra"></div>
-                </a>
+                    </a>
                 </li>
                 <li><a href="login.html">Login <div class="barra"></div>
-                </a>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -39,19 +40,13 @@
                 <div class="titu">
                     <br>
                     <h1>Quem somos nós?</h1>
-                    <p>O São Paulo Roleplay é um servidor de gta V, focado em trazer diversão e distração para todos
-                        tipos de pessoas,
-                        nós temos vários tipos de trabalhos desde legal até ilegal, temos diversos tipos de casas,
-                        carros, motos e armas,
-                        a cidade em média bate 100 players diários, caso tenha algum problema dentro do jogo temos
-                        adiministradores os famosos (ADMS) que
-                        vão te ajudar através de um chamado, temos benefícios dentro do jogo como mansões, carros
-                        brasileiros, armas personalizadas
-                        e salário a cada 30min jogados dentro do jogo, para adiquirir esses benefícios <a
-                            href="cadastro.html">crie um cadastro </a>
-                        no nosso site para poder ver e jogar. E para que você possa jogar no nosso servidor precisará ler algumas
-                        regras, <a href="regras.html">clique aqui para ler.</a>
-
+                   <div class="msg"></div>
+                    <button onclick="sobre()" class="botao" id="botao">Clique aqui para saber</button>
+                    <div class="textoss">
+                        <div id="msg"></div>
+                    </div>
+                       
+                       
                     </p>
                 </div>
             </div>
@@ -87,3 +82,17 @@
 </body>
 
 </html>
+
+<script>
+     vt_conteudo = ['O São Paulo Roleplay é um servidor de gta V, focado em trazer diversão e distração para todos tipos de pessoas, nós temos vários tipos de trabalhos desde legal até ilegal, temos diversos tipos de casas, carros, motos e armas, a cidade em média bate 100 players diários, caso tenha algum problema dentro do jogo temos adiministradores os famosos(ADMS) que vão te ajudar através de um chamado, temos benefícios dentro do jogo como mansões, carros brasileiros, armas personalizadas e salário a cada 30min jogados dentro do jogo, para adiquirir esses benefícios no jogo é necessário crirar um  <a href="cadastro.html">cadastro</a>. E para que você possa jogar no nosso servidor precisará  ler algumas <a href="regras.html">regras</a>.']
+    function sobre() {
+       botao.style.display = 'none'
+       for (let index = 0; index < vt_conteudo.length; index++) {
+           msg.innerHTML += `${vt_conteudo[index]}` 
+           
+       }
+    }
+
+
+
+</script>
