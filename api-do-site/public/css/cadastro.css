@@ -76,7 +76,7 @@ ul a {
 }
 
 .card {
-    height: 110vh;
+    min-height:  110vh;
     color: white;
     justify-content: column;
     align-items: center;

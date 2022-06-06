@@ -3,9 +3,9 @@
 -- ter este arquivo aqui não significa que a tabela em seu BD estará como abaixo!
 
 /* para workbench - local - desenvolvimento */
-CREATE DATABASE São_Paulo_RP;
+CREATE DATABASE Sao_Paulo_RP;
 
-USE São_Paulo_RP;
+USE Sao_Paulo_RP;
 
 CREATE TABLE usuario (
 	id INT PRIMARY KEY AUTO_INCREMENT,
@@ -15,6 +15,9 @@ CREATE TABLE usuario (
 	email VARCHAR(50),
 	senha VARCHAR(50)
 );
+
+select * from usuario;
+select count(id) as players from usuario; 
 
 
 
